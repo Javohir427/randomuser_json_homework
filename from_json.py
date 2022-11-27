@@ -11,10 +11,13 @@ def read_json(filename:str) -> dict:
     """
 
     # Read the data from the file
-    f = open(filename).read()
+    f = open('user.json').read()
 
     # Parse the JSON data
     data = json.loads(f)
-
+    print(type(data))
     return data
-  
+print(read_json('diyor'))  
+
+
+     
